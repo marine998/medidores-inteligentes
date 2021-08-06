@@ -12,16 +12,20 @@
                     <div class="form-group">
                         <label for="nombreTxt">Nombre</label>
                         <asp:TextBox ID="nombreTxt" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator CssClass="text-danger" ControlToValidate="nombreTxt" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Ingrese Nro Medidor"></asp:RequiredFieldValidator>
                     </div>
 
                    <div class="form-group">
                         <label for="rutTxt">Fecha</label>
                         <asp:TextBox ID="fechaTxt" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator CssClass="text-danger" ControlToValidate="nombreTxt" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Ingrese Fecha"></asp:RequiredFieldValidator>
                     </div>
 
                     <div class="form-group">
                         <label for="contraTxt">Valor Consumo</label>
                         <asp:TextBox ID="valorConsumoTxt" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator CssClass="text-danger" ControlToValidate="nombreTxt" ID="RequiredFieldValidator3" runat="server" ErrorMessage="Ingrese Valor Consumo"></asp:RequiredFieldValidator>
+
                     </div>
 
                     <asp:Button OnClick="ingresarBtn_Click" runat="server" ID="ingresarBtn" Text="Ingresar" />
